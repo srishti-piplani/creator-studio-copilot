@@ -41,9 +41,9 @@ Actual returned results include broader production and setup resources. Response
 ## Your studio, personalized
 
 - **My Studio Setup:** Logic Pro and DaVinci Resolve context, plus your selected microphone and interface. Defaults are AT2035 and Scarlett 2i2 2nd Gen; documentation versions are not assumed installed versions.
-- **My Studio Notebook:** save individual answers with citations and editable topic titles. It does not automatically create a complete troubleshooting-resolution summary.
+- **My Studio Notebook:** save useful answers and revisit them whenever you need them. Individual answers, citations and editable topic titles are stored locally in your browser; it does not automatically summarize entire troubleshooting conversations.
 - **Recent Conversations:** return home or start a new thread while keeping previous browser-local conversations accessible.
-- **Live research activity:** see actual retrieval, documentation and web operations as they happen, followed by the final answer.
+- **Live Research Activity:** follow the assistant’s progress as it searches Studio Knowledge, checks documentation and researches the web. Indicators reflect actual backend operations, not simulated progress; each request uses only the tools its workflow calls for.
 - **Source citations:** distinguish original Studio Knowledge, official documentation and community resources.
 
 Product scope: Logic Pro, DaVinci Resolve, Scarlett Solo, Scarlett 2i2, AT2020 and AT2035. Support depends on available evidence and applicable versions.

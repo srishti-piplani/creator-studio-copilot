@@ -26,11 +26,19 @@ Generic local loading supports PDF, Markdown and UTF-8 text; the Studio builder 
 
 ## Chunking
 
+A chunk is a smaller passage the retriever can select instead of supplying a whole document. This keeps evidence focused on the question. Overlap repeats a small portion between neighboring fixed-size chunks so a boundary is less likely to separate an explanation from its context.
+
+We compared smaller, medium and structure-aware passages to explore the trade-off between focused matches and enough surrounding context. **Structure-aware** means keeping related headings, paragraphs and instructions together when they fit, rather than cutting solely at a fixed length.
+
 | Strategy | Target / overlap | Namespace | Records |
 |---|---|---|---:|
 | A | Approx. 300 / 45 tokens | `studio-small-300` | 36 |
 | B | Approx. 500 / 75 tokens | `studio-medium-500` | 24 |
 | C | Structure-aware approx. 800 cap / zero sliding overlap | `studio-structure-aware` | 12 |
+
+**Strategy B is the live application's configured default** (`_retrieve` explicitly selects B/top five). Its medium size is a practical balance between focused passages and surrounding context, not a statistically proven winner: all three strategies reached the same guide-recall score on the small benchmark.
+
+Separate namespaces keep the three chunk sets isolated under the same embedding model. We can run the same questions against each set without mixing strategies; all cover the same retained source text.
 
 The token estimate counts up-to-four-character word pieces and punctuation; it is not a provider tokenizer. Heading prefixes consume budget. Fixed windows preserve whole words with overlap. Structure-aware ranges preserve related headings, paragraphs and procedures when possible; oversized units split with repeated heading/introduction context. Indivisible units and tokenizer differences prevent exact provider-token guarantees.
 

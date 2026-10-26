@@ -2,7 +2,43 @@
 
 `backend/app/graph/workflow.py` builds a bounded graph around the existing retrieval service. Helpers for source spans, monitoring and resource permissions are ordinary Python functions, not separate agents or graph nodes.
 
-## Actual graph
+## How the Agent Chooses Its Tools
+
+This is a **conceptual guide to tool choice**, not a literal map of LangGraph nodes. Research is conditional; a request does not automatically use every tool.
+
+```mermaid
+flowchart TD
+    Input[User question + Studio Setup] --> Router[Intent router]
+    Router -->|Conceptual Learn| Knowledge[Studio Knowledge: Pinecone]
+    Router -->|Creative advice| Knowledge
+    Knowledge --> Assess[Assess applicable evidence]
+    Assess -->|Enough support| Validate[Applicable evidence and output validation]
+    Assess -->|Missing support and further research appropriate| Fallback[Conditional web fallback: Keenable]
+    Fallback --> Validate
+    Router -->|Product-specific Learn how-to| Official[Official web research: Keenable]
+    Official --> Validate
+    Router -->|Troubleshoot| Diagnosis[Diagnostic state + relevant product evidence]
+    Diagnosis --> Next[Question or supported action]
+    Next --> Validate
+    Router -->|Discover| Research[Live web research: Keenable]
+    Research --> Validate
+    Router -->|Clarify| Clarify[Ask for missing context]
+    Clarify --> Validate
+    Validate --> Response[Final response]
+```
+
+| Workflow | Pinecone | Keenable |
+|---|---|---|
+| Conceptual Learn | First source for general explanations | Conditional fallback when support is insufficient or assessment requests further research |
+| Product-specific Learn how-to | Bypassed on the direct procedural path | Prioritize applicable official instructions |
+| Creative advice | Start with relevant concepts | Conditional fallback for missing support |
+| Troubleshoot | Retrieve conceptual evidence on non-resolved turns | Product-specific recording/monitoring checks go directly from retrieval to research; other cases follow assessment, software-specific needs or failed actions |
+| Discover | Bypassed | Search resources and, where relevant, check usage terms |
+| Clarify | Bypassed | Bypassed; ask for context |
+
+The conceptual fallback represents a need for additional applicable support. In code, `_next` uses `not sufficient` **or** `web_needed` (alongside its other scoped conditions), not a strict requirement that both flags be set. Pure clarification needs no invented source citation; validation applies to the type of response being returned. Resolved troubleshooting can respond without tools.
+
+## Internal LangGraph Execution Flow
 
 ```mermaid
 flowchart TD
