@@ -1,4 +1,4 @@
-"""Focused Phase 4D regressions. Scripted providers; no external calls."""
+"""Focused setup, topic and resource-label regressions. Scripted providers; no external calls."""
 import json
 import unittest
 from unittest.mock import Mock

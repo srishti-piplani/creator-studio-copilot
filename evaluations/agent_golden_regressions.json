@@ -5,7 +5,7 @@
   "limitations": [
     "Not a live execution of these golden questions or an LLM quality score.",
     "Passing linked tests does not verify current source accessibility, retrieval relevance, factual completeness or every rubric criterion.",
-    "New agent golden questions have not been live-scored in this phase."
+    "Linked policy checks do not provide live answer-quality scores."
   ],
   "scenarios_with_passing_linked_checks": 12,
   "total_scenarios": 12,

@@ -360,7 +360,7 @@ class AgentModelTests(unittest.TestCase):
         self.assertEqual(result['diagnostic_question'], 'Does the track input meter move?')
 
 
-class Phase4BQualityTests(unittest.TestCase):
+class AnswerQualityTests(unittest.TestCase):
     def test_complete_howto_renders_all_steps_and_success_check(self):
         agent, _ = make_agent([routing('learn', goal='How do I record audio?')], replies=[reply(
             answer='Record a short test clip. [K1]', step=None, status='idle',

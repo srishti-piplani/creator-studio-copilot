@@ -93,7 +93,7 @@ def load_documents(corpus_dir: str | Path | None = None,
         else:
             text = clean_text(path.read_text(encoding='utf-8-sig'))
         if not text:
-            continue  # Scanned PDFs require OCR, which is outside this phase.
+            continue  # Scanned PDFs require OCR, which is not implemented.
         metadata = {key: entry[key] for key in (
             'software_version', 'hardware_generation') if entry.get(key) is not None}
         metadata.update(document_id=hashlib.sha256(relative.encode()).hexdigest(),

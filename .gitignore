@@ -69,19 +69,15 @@ out/
 # Public evaluation artifacts are an explicit allowlist; raw tool/model traces stay local
 /evaluations/*
 !/evaluations/README.md
-!/evaluations/historical_results.md
 !/evaluations/studio_retrieval.json
 !/evaluations/studio_preparation.json
 !/evaluations/agent_scenarios.json
 !/evaluations/agent_golden_regressions.json
-!/evaluations/phase5a_report.md
 !/evaluations/verified_source_inventory.json
-!/evaluations/cleanup_archive_inventory.json
-!/evaluations/public_readiness_checks.json
-!/evaluations/phase5a_baseline/
-/evaluations/phase5a_baseline/*
-!/evaluations/phase5a_baseline/golden_questions.json
-!/evaluations/phase5a_baseline/studio_retrieval.json
+!/evaluations/retrieval_baseline/
+/evaluations/retrieval_baseline/*
+!/evaluations/retrieval_baseline/golden_questions.json
+!/evaluations/retrieval_baseline/studio_retrieval.json
 
 # Next.js generates this local build type declaration
 /frontend/next-env.d.ts

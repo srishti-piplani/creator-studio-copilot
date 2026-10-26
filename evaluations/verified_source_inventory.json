@@ -2,15 +2,13 @@
   {
     "scenario_id": "agent-q03",
     "url": "https://support.apple.com/guide/logicpro/add-remove-move-and-copy-plug-ins-lgcpf3940a82/12.3/mac/15.6",
-    "historical_evidence_artifact": "evaluations/phase4k_live_results.json",
     "verification_basis": "Saved official evidence for plug-in insertion; not a fresh availability check.",
-    "publication_note": "Raw evidence archived privately; URL/provenance only. No fresh availability check in Phase 5B."
+    "publication_note": "URL/provenance inventory only; underlying evidence retained privately. Source availability has not been freshly rechecked."
   },
   {
     "scenario_id": "agent-q07",
     "url": "https://support.focusrite.com/hc/en-gb/articles/206849879-Input-Signal-audible-when-not-recording-or-software-closed",
-    "historical_evidence_artifact": "evaluations/phase4m_live_results.json",
     "verification_basis": "Saved applicable Focusrite Direct Monitor evidence.",
-    "publication_note": "Raw evidence archived privately; URL/provenance only. No fresh availability check in Phase 5B."
+    "publication_note": "URL/provenance inventory only; underlying evidence retained privately. Source availability has not been freshly rechecked."
   }
 ]

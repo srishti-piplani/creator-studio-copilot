@@ -15,7 +15,7 @@ class GoldenEvaluations(unittest.TestCase):
         self.assertTrue(all(r['relevant_source_ids'] == [] for r in rows if not r['rag_answerable']))
 
     def test_positive_benchmark_unchanged(self):
-        old = json.loads((ROOT / 'evaluations/phase5a_baseline/golden_questions.json').read_text())
+        old = json.loads((ROOT / 'evaluations/retrieval_baseline/golden_questions.json').read_text())
         new = load_golden('golden_questions.json', 'rag_only')
         for before, after in zip(old, new):
             self.assertEqual(before['id'], after['id'])

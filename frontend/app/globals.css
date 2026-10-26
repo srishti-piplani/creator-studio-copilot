@@ -1915,7 +1915,7 @@ h1 {
 }
 
 
-/* Phase 4B: compact landing flow, readable type, and explicit composer geometry. */
+/* compact landing flow, readable type, and explicit composer geometry. */
 .assistant-workspace { padding: 22px 36px 25px; }
 .workspace-heading .eyebrow { font-size: 11px; letter-spacing: 1.1px; }
 .welcome { padding-top: 20px; }
@@ -2025,7 +2025,7 @@ h1 {
 /* Keep navigation in its own viewport, even on long conversations. */
 .sidebar { height: 100dvh; overflow-y: auto; }
 
-/* Phase 4E: action surfaces above a quieter, connected equipment rack. */
+/* action surfaces above a quieter, connected equipment rack. */
 .mode-card {
   --action-accent: #276b55;
   --action-tint: #edf6ed;
@@ -2069,7 +2069,7 @@ h1 {
 @media(max-width:420px) { .mode-card h2 { font-size: 17px; } .mode-card .mode-icon { width: 34px; height: 36px; } }
 @media(prefers-reduced-motion:reduce) { .mode-card:hover, .mode-card.selected { transform: none; } }
 
-/* Phase 4F: fluid centered composition; dimensions scale without CSS zoom. */
+/* fluid centered composition; dimensions scale without CSS zoom. */
 @media (min-width: 1101px) {
   .assistant-workspace:not(.conversation-active) {
     width: calc(100% - 72px);

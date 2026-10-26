@@ -33,7 +33,7 @@ def procedural_agent(draft=None, review=None):
     model=ContractChat(routes=[routing('learn',goal='How do I add a compressor in Logic Pro?',software_specific=True)],draft=draft,review=review)
     return StudioAgent(base.rag,base.web,chat=model),model
 
-class Phase4K(unittest.TestCase):
+class AnswerContracts(unittest.TestCase):
     def test_takeaway_only_is_not_a_procedural_contract(self):
         with self.assertRaises(ValidationError):
             HowToAnswer.model_validate({'takeaway':'Insert a compressor.'})

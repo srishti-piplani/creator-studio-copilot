@@ -1,4 +1,4 @@
-"""Synthetic-only Phase 2B quality/provenance regression tests."""
+"""Synthetic-only cleaning and provenance regression tests."""
 
 import unittest
 

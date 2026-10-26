@@ -22,7 +22,7 @@ class CreativeChat(ScriptedChat):
                 {'text':'Keep a bypassable version and compare at matched loudness.', 'source':{'source_id':'K1','quote':'Keep a bypassable version and compare at matched loudness.'}}], 'missing_evidence':None}
         return super().complete(messages)
 
-class Phase4M(unittest.TestCase):
+class CreativeMonitoringTests(unittest.TestCase):
     def test_creative_goal_is_not_forced_into_ui_procedure(self):
         base,_=make_agent([])
         base.rag.retrieve.return_value['evidence'][0]['text']='Compare a modest EQ change in the mix. Keep a bypassable version and compare at matched loudness.'
@@ -52,7 +52,7 @@ class Phase4M(unittest.TestCase):
         self.assertEqual(result['troubleshooting_status'],'idle')
 
     def test_exact_software_request_still_uses_procedural_contract(self):
-        from test_phase4k import procedural_agent
+        from test_answer_contracts import procedural_agent
         agent,_=procedural_agent()
         result=agent.chat('How do I add a compressor in Logic Pro?')
         self.assertFalse(agent.session(result['session_id'])['creative_goal'])

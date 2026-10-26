@@ -31,7 +31,7 @@ def main():
             'Not a live execution of these golden questions or an LLM quality score.',
             'Passing linked tests does not verify current source accessibility, '
             'retrieval relevance, factual completeness or every rubric criterion.',
-            'New agent golden questions have not been live-scored in this phase.',
+            'Linked policy checks do not provide live answer-quality scores.',
         ],
         'scenarios_with_passing_linked_checks': sum(r['linked_checks_passed'] for r in results),
         'total_scenarios': len(results), 'results': results,

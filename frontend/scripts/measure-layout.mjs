@@ -1,10 +1,10 @@
-/** Phase 4F: real rendered measurements only. No backend or chat requests. */
+/** Real rendered layout measurements only. No backend or chat requests. */
 import { chromium } from 'playwright-core';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 
 const base = process.env.LAYOUT_PREVIEW_URL || 'http://localhost:3001';
-const screenshots = '/tmp/creator-studio-phase4f';
+const screenshots = '/tmp/creator-studio-layout-qa';
 await fs.mkdir(screenshots, { recursive: true });
 const browser = await chromium.launch({
   executablePath: process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
@@ -103,7 +103,7 @@ try {
   assert.ok(conversation.textWidth < 900);
   assert.deepEqual(browserErrors, []);
 } finally {
-  await fs.writeFile('../evaluations/phase4f_layout_measurements.json', JSON.stringify({
+  await fs.writeFile('../evaluations/layout_measurements.json', JSON.stringify({
     browser: 'Installed Google Chrome through Playwright Core', zoom: '100% (no CSS zoom/scale)',
     measurements, conversationCssProbe: conversation, browserErrors, screenshots,
   }, null, 2) + '\n');

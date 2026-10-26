@@ -913,6 +913,6 @@
     "Small author-designed set, not an unbiased benchmark.",
     "No winning strategy declared; answer factuality requires a separate review.",
     "Negative retrieval does not measure refusal accuracy or full-agent answerability.",
-    "studio-q17 wording revised in Phase 5A; positive queries and the recall denominator are unchanged."
+    "studio-q17 wording revised to avoid assuming every automation mode has a shortcut; positive queries and the recall denominator are unchanged."
   ]
 }

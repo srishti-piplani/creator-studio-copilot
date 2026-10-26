@@ -1,4 +1,4 @@
-"""Focused Phase 4J regressions; scripted provider boundaries, real graph execution."""
+"""Focused answer-reliability regressions; scripted provider boundaries, real graph execution."""
 import json
 import unittest
 from app.graph.answers import LearnAnswer, DraftReview, prepare_howto, apply_howto_review

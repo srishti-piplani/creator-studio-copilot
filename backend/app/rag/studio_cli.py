@@ -75,7 +75,7 @@ def retrieval_evaluation():
         print(configuration,'Recall@5',round(report[configuration]['source_recall_at_5'],4),flush=True)
     result={'metric_definition':'Macro average of relevant GUIDE IDs retrieved in top five CHUNKS, across RAG-answerable questions. RAG-unsupported questions excluded from recall denominator; retrieval is not answerability detection.',
             'evaluation_scope':'rag_only','golden_set':'data/golden_questions.json','golden_answers_independent_of_live_generation':True,
-            'strategies':report,'limitations':['Small author-designed set, not an unbiased benchmark.','No winning strategy declared; answer factuality requires a separate review.', 'Negative retrieval does not measure refusal accuracy or full-agent answerability.', 'studio-q17 wording revised in Phase 5A; positive queries and the recall denominator are unchanged.']}
+            'strategies':report,'limitations':['Small author-designed set, not an unbiased benchmark.','No winning strategy declared; answer factuality requires a separate review.', 'Negative retrieval does not measure refusal accuracy or full-agent answerability.', 'studio-q17 wording revised to avoid assuming every automation mode has a shortcut; positive queries and the recall denominator are unchanged.']}
     (PROJECT_ROOT/'evaluations/studio_retrieval.json').write_text(json.dumps(result,indent=2)+'\n')
     return result
 

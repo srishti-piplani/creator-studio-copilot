@@ -1,4 +1,4 @@
-"""Regressions from Phase 4I actual generated outputs (no provider calls)."""
+"""Regressions from actual generated outputs (no provider calls)."""
 import unittest
 from app.graph.answers import LearnAnswer, insertion_scope_issues, resource_description
 
