@@ -1,0 +1,918 @@
+{
+  "metric_definition": "Macro average of relevant GUIDE IDs retrieved in top five CHUNKS, across RAG-answerable questions. RAG-unsupported questions excluded from recall denominator; retrieval is not answerability detection.",
+  "evaluation_scope": "rag_only",
+  "golden_set": "data/golden_questions.json",
+  "golden_answers_independent_of_live_generation": true,
+  "strategies": {
+    "A": {
+      "namespace": "studio-small-300",
+      "questions": 20,
+      "rag_answerable_questions": 16,
+      "source_recall_at_5": 1.0,
+      "mean_seconds": 0.24191000000000001,
+      "median_seconds": 0.16349999999999998,
+      "p95_seconds": 0.4853,
+      "results": [
+        {
+          "id": "studio-q01",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-microphones"
+          ],
+          "retrieved_source_ids": [
+            "studio-microphones",
+            "studio-midi",
+            "studio-monitoring"
+          ],
+          "seconds": 0.8786
+        },
+        {
+          "id": "studio-q02",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-gain-staging"
+          ],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-midi",
+            "studio-recording-editing"
+          ],
+          "seconds": 0.1589
+        },
+        {
+          "id": "studio-q03",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-monitoring"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-monitoring",
+            "studio-synchronization"
+          ],
+          "seconds": 0.2135
+        },
+        {
+          "id": "studio-q04",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-equalization"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-equalization"
+          ],
+          "seconds": 0.2034
+        },
+        {
+          "id": "studio-q05",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-dynamics"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-gain-staging"
+          ],
+          "seconds": 0.4853
+        },
+        {
+          "id": "studio-q06",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-dynamics",
+            "studio-equalization"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-equalization"
+          ],
+          "seconds": 0.1631
+        },
+        {
+          "id": "studio-q07",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-space-effects"
+          ],
+          "retrieved_source_ids": [
+            "studio-monitoring",
+            "studio-space-effects"
+          ],
+          "seconds": 0.466
+        },
+        {
+          "id": "studio-q08",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-midi"
+          ],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-midi",
+            "studio-monitoring"
+          ],
+          "seconds": 0.129
+        },
+        {
+          "id": "studio-q09",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-recording-editing"
+          ],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-recording-editing",
+            "studio-space-effects"
+          ],
+          "seconds": 0.464
+        },
+        {
+          "id": "studio-q10",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-video-basics"
+          ],
+          "retrieved_source_ids": [
+            "studio-export",
+            "studio-video-basics"
+          ],
+          "seconds": 0.1639
+        },
+        {
+          "id": "studio-q11",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-synchronization"
+          ],
+          "retrieved_source_ids": [
+            "studio-export",
+            "studio-recording-editing",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1733
+        },
+        {
+          "id": "studio-q12",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-color"
+          ],
+          "retrieved_source_ids": [
+            "studio-color",
+            "studio-export",
+            "studio-recording-editing"
+          ],
+          "seconds": 0.163
+        },
+        {
+          "id": "studio-q13",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-export"
+          ],
+          "retrieved_source_ids": [
+            "studio-export",
+            "studio-synchronization",
+            "studio-video-basics"
+          ],
+          "seconds": 0.2381
+        },
+        {
+          "id": "studio-q14",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-dynamics",
+            "studio-gain-staging"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-gain-staging"
+          ],
+          "seconds": 0.1209
+        },
+        {
+          "id": "studio-q15",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-equalization",
+            "studio-monitoring"
+          ],
+          "retrieved_source_ids": [
+            "studio-equalization",
+            "studio-monitoring",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1222
+        },
+        {
+          "id": "studio-q16",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-export",
+            "studio-synchronization"
+          ],
+          "retrieved_source_ids": [
+            "studio-export",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1306
+        },
+        {
+          "id": "studio-q17",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-color",
+            "studio-midi",
+            "studio-monitoring"
+          ],
+          "seconds": 0.1261
+        },
+        {
+          "id": "studio-q18",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-microphones",
+            "studio-midi"
+          ],
+          "seconds": 0.1498
+        },
+        {
+          "id": "studio-q19",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-color",
+            "studio-export"
+          ],
+          "seconds": 0.1223
+        },
+        {
+          "id": "studio-q20",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-export",
+            "studio-microphones",
+            "studio-midi",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1662
+        }
+      ]
+    },
+    "B": {
+      "namespace": "studio-medium-500",
+      "questions": 20,
+      "rag_answerable_questions": 16,
+      "source_recall_at_5": 1.0,
+      "mean_seconds": 0.14896500000000001,
+      "median_seconds": 0.129,
+      "p95_seconds": 0.2347,
+      "results": [
+        {
+          "id": "studio-q01",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-microphones"
+          ],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-microphones",
+            "studio-midi",
+            "studio-monitoring"
+          ],
+          "seconds": 0.2347
+        },
+        {
+          "id": "studio-q02",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-gain-staging"
+          ],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-midi",
+            "studio-recording-editing",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1259
+        },
+        {
+          "id": "studio-q03",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-monitoring"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-midi",
+            "studio-monitoring",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1216
+        },
+        {
+          "id": "studio-q04",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-equalization"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-equalization",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1299
+        },
+        {
+          "id": "studio-q05",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-dynamics"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-equalization",
+            "studio-gain-staging"
+          ],
+          "seconds": 0.1622
+        },
+        {
+          "id": "studio-q06",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-dynamics",
+            "studio-equalization"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-equalization",
+            "studio-gain-staging"
+          ],
+          "seconds": 0.1208
+        },
+        {
+          "id": "studio-q07",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-space-effects"
+          ],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-monitoring",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1663
+        },
+        {
+          "id": "studio-q08",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-midi"
+          ],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-midi",
+            "studio-monitoring"
+          ],
+          "seconds": 0.122
+        },
+        {
+          "id": "studio-q09",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-recording-editing"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-gain-staging",
+            "studio-recording-editing",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1186
+        },
+        {
+          "id": "studio-q10",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-video-basics"
+          ],
+          "retrieved_source_ids": [
+            "studio-export",
+            "studio-synchronization",
+            "studio-video-basics"
+          ],
+          "seconds": 0.1401
+        },
+        {
+          "id": "studio-q11",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-synchronization"
+          ],
+          "retrieved_source_ids": [
+            "studio-color",
+            "studio-export",
+            "studio-recording-editing",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1217
+        },
+        {
+          "id": "studio-q12",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-color"
+          ],
+          "retrieved_source_ids": [
+            "studio-color",
+            "studio-export",
+            "studio-recording-editing",
+            "studio-synchronization"
+          ],
+          "seconds": 0.2392
+        },
+        {
+          "id": "studio-q13",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-export"
+          ],
+          "retrieved_source_ids": [
+            "studio-export",
+            "studio-synchronization",
+            "studio-video-basics"
+          ],
+          "seconds": 0.1206
+        },
+        {
+          "id": "studio-q14",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-dynamics",
+            "studio-gain-staging"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-gain-staging",
+            "studio-recording-editing"
+          ],
+          "seconds": 0.1228
+        },
+        {
+          "id": "studio-q15",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-equalization",
+            "studio-monitoring"
+          ],
+          "retrieved_source_ids": [
+            "studio-equalization",
+            "studio-gain-staging",
+            "studio-monitoring",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1404
+        },
+        {
+          "id": "studio-q16",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-export",
+            "studio-synchronization"
+          ],
+          "retrieved_source_ids": [
+            "studio-export",
+            "studio-recording-editing",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1408
+        },
+        {
+          "id": "studio-q17",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-midi",
+            "studio-monitoring",
+            "studio-recording-editing",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1281
+        },
+        {
+          "id": "studio-q18",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-microphones",
+            "studio-midi"
+          ],
+          "seconds": 0.1625
+        },
+        {
+          "id": "studio-q19",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-color",
+            "studio-export",
+            "studio-gain-staging",
+            "studio-video-basics"
+          ],
+          "seconds": 0.2342
+        },
+        {
+          "id": "studio-q20",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-export",
+            "studio-microphones",
+            "studio-midi",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1269
+        }
+      ]
+    },
+    "C": {
+      "namespace": "studio-structure-aware",
+      "questions": 20,
+      "rag_answerable_questions": 16,
+      "source_recall_at_5": 1.0,
+      "mean_seconds": 0.14346,
+      "median_seconds": 0.12745,
+      "p95_seconds": 0.2034,
+      "results": [
+        {
+          "id": "studio-q01",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-microphones"
+          ],
+          "retrieved_source_ids": [
+            "studio-equalization",
+            "studio-gain-staging",
+            "studio-microphones",
+            "studio-midi",
+            "studio-monitoring"
+          ],
+          "seconds": 0.2034
+        },
+        {
+          "id": "studio-q02",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-gain-staging"
+          ],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-microphones",
+            "studio-midi",
+            "studio-monitoring",
+            "studio-recording-editing"
+          ],
+          "seconds": 0.1903
+        },
+        {
+          "id": "studio-q03",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-monitoring"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-microphones",
+            "studio-midi",
+            "studio-monitoring",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1291
+        },
+        {
+          "id": "studio-q04",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-equalization"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-equalization",
+            "studio-microphones",
+            "studio-midi",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1444
+        },
+        {
+          "id": "studio-q05",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-dynamics"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-equalization",
+            "studio-gain-staging",
+            "studio-midi",
+            "studio-monitoring"
+          ],
+          "seconds": 0.1344
+        },
+        {
+          "id": "studio-q06",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-dynamics",
+            "studio-equalization"
+          ],
+          "retrieved_source_ids": [
+            "studio-color",
+            "studio-dynamics",
+            "studio-equalization",
+            "studio-midi",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1251
+        },
+        {
+          "id": "studio-q07",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-space-effects"
+          ],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-microphones",
+            "studio-midi",
+            "studio-monitoring",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1206
+        },
+        {
+          "id": "studio-q08",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-midi"
+          ],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-microphones",
+            "studio-midi",
+            "studio-monitoring",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1251
+        },
+        {
+          "id": "studio-q09",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-recording-editing"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-gain-staging",
+            "studio-recording-editing",
+            "studio-space-effects",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1162
+        },
+        {
+          "id": "studio-q10",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-video-basics"
+          ],
+          "retrieved_source_ids": [
+            "studio-color",
+            "studio-dynamics",
+            "studio-export",
+            "studio-synchronization",
+            "studio-video-basics"
+          ],
+          "seconds": 0.1557
+        },
+        {
+          "id": "studio-q11",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-synchronization"
+          ],
+          "retrieved_source_ids": [
+            "studio-color",
+            "studio-export",
+            "studio-gain-staging",
+            "studio-synchronization",
+            "studio-video-basics"
+          ],
+          "seconds": 0.1248
+        },
+        {
+          "id": "studio-q12",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-color"
+          ],
+          "retrieved_source_ids": [
+            "studio-color",
+            "studio-equalization",
+            "studio-recording-editing",
+            "studio-synchronization",
+            "studio-video-basics"
+          ],
+          "seconds": 0.2238
+        },
+        {
+          "id": "studio-q13",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-export"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-export",
+            "studio-gain-staging",
+            "studio-synchronization",
+            "studio-video-basics"
+          ],
+          "seconds": 0.1778
+        },
+        {
+          "id": "studio-q14",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-dynamics",
+            "studio-gain-staging"
+          ],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-gain-staging",
+            "studio-microphones",
+            "studio-recording-editing",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1247
+        },
+        {
+          "id": "studio-q15",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-equalization",
+            "studio-monitoring"
+          ],
+          "retrieved_source_ids": [
+            "studio-equalization",
+            "studio-gain-staging",
+            "studio-microphones",
+            "studio-monitoring",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1216
+        },
+        {
+          "id": "studio-q16",
+          "rag_answerable": true,
+          "recall_at_5": 1.0,
+          "expected_source_ids": [
+            "studio-export",
+            "studio-synchronization"
+          ],
+          "retrieved_source_ids": [
+            "studio-export",
+            "studio-midi",
+            "studio-monitoring",
+            "studio-recording-editing",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1365
+        },
+        {
+          "id": "studio-q17",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-dynamics",
+            "studio-midi",
+            "studio-monitoring",
+            "studio-recording-editing",
+            "studio-space-effects"
+          ],
+          "seconds": 0.1393
+        },
+        {
+          "id": "studio-q18",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-gain-staging",
+            "studio-microphones",
+            "studio-midi",
+            "studio-monitoring",
+            "studio-synchronization"
+          ],
+          "seconds": 0.1258
+        },
+        {
+          "id": "studio-q19",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-color",
+            "studio-export",
+            "studio-gain-staging",
+            "studio-synchronization",
+            "studio-video-basics"
+          ],
+          "seconds": 0.1255
+        },
+        {
+          "id": "studio-q20",
+          "rag_answerable": false,
+          "recall_at_5": null,
+          "expected_source_ids": [],
+          "retrieved_source_ids": [
+            "studio-microphones",
+            "studio-midi",
+            "studio-monitoring",
+            "studio-synchronization",
+            "studio-video-basics"
+          ],
+          "seconds": 0.1251
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Small author-designed set, not an unbiased benchmark.",
+    "No winning strategy declared; answer factuality requires a separate review.",
+    "Negative retrieval does not measure refusal accuracy or full-agent answerability.",
+    "studio-q17 wording revised in Phase 5A; positive queries and the recall denominator are unchanged."
+  ]
+}

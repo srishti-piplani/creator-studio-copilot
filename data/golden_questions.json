@@ -1,0 +1,300 @@
+[
+  {
+    "id": "studio-q01",
+    "question": "What is phantom power, and does every microphone need it?",
+    "category": "factual",
+    "expected_facts": [
+      "Phantom supplies DC to compatible microphone electronics.",
+      "Power requirements depend on microphone design; not every microphone needs phantom."
+    ],
+    "relevant_source_ids": [
+      "studio-microphones"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q02",
+    "question": "Why can my recording clip when my headphone volume is low?",
+    "category": "practical",
+    "expected_facts": [
+      "Input gain and headphone level are different stages.",
+      "Reducing listening level does not repair input overload."
+    ],
+    "relevant_source_ids": [
+      "studio-gain-staging"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q03",
+    "question": "What is the difference between direct and software monitoring?",
+    "category": "factual",
+    "expected_facts": [
+      "Direct monitoring avoids the DAW round trip.",
+      "Software monitoring can include DAW processing and adds buffering/processing delay."
+    ],
+    "relevant_source_ids": [
+      "studio-monitoring"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q04",
+    "question": "What happens when I increase Q on a parametric EQ bell?",
+    "category": "factual",
+    "expected_facts": [
+      "Higher Q generally narrows the affected frequency region."
+    ],
+    "relevant_source_ids": [
+      "studio-equalization"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q05",
+    "question": "In an ideal hard-knee compressor, what happens to 8 dB above threshold at 4:1?",
+    "category": "reasoning",
+    "expected_facts": [
+      "About 2 dB above threshold before makeup gain.",
+      "Transient behavior can differ from the ideal static calculation."
+    ],
+    "relevant_source_ids": [
+      "studio-dynamics"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q06",
+    "question": "How does EQ differ from compression, and when could a de-esser help?",
+    "category": "multi-guide",
+    "expected_facts": [
+      "EQ changes frequency balance.",
+      "Compression controls level behavior.",
+      "A de-esser targets excessive sibilance."
+    ],
+    "relevant_source_ids": [
+      "studio-equalization",
+      "studio-dynamics"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q07",
+    "question": "Why use a shared reverb send with a fully wet return?",
+    "category": "practical",
+    "expected_facts": [
+      "A parallel return combines effect with the dry track.",
+      "A wet-only return avoids adding another dry copy."
+    ],
+    "relevant_source_ids": [
+      "studio-space-effects"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q08",
+    "question": "Why can MIDI activity be visible while my keyboard produces no sound?",
+    "category": "practical",
+    "expected_facts": [
+      "MIDI instructions are not an audio waveform.",
+      "Check receiving instrument and audio output routing."
+    ],
+    "relevant_source_ids": [
+      "studio-midi"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q09",
+    "question": "What is comping, and why might a crossfade still sound bad?",
+    "category": "reasoning",
+    "expected_facts": [
+      "Comping selects portions from multiple takes.",
+      "Crossfades do not guarantee coherent tone or timing and can double syllables."
+    ],
+    "relevant_source_ids": [
+      "studio-recording-editing"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q10",
+    "question": "How do resolution, frame rate and codec differ?",
+    "category": "factual",
+    "expected_facts": [
+      "Resolution concerns pixels.",
+      "Frame rate concerns presentation over time.",
+      "A codec encodes/decodes the media."
+    ],
+    "relevant_source_ids": [
+      "studio-video-basics"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q11",
+    "question": "Why might audio and video drift out of sync after an initial alignment?",
+    "category": "reasoning",
+    "expected_facts": [
+      "Drift changes over time, unlike constant offset.",
+      "Inspect duration, rate interpretation and independent clocks.",
+      "An initial clap or timecode label does not prove matching clocks."
+    ],
+    "relevant_source_ids": [
+      "studio-synchronization"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q12",
+    "question": "How can scopes help match two camera angles without deciding the look for me?",
+    "category": "practical",
+    "expected_facts": [
+      "Scopes measure signal properties.",
+      "Scene content and visual intent still require judgment."
+    ],
+    "relevant_source_ids": [
+      "studio-color"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q13",
+    "question": "About how large is 90 seconds of video at 12 megabits per second before audio?",
+    "category": "reasoning",
+    "expected_facts": [
+      "About 135 decimal megabytes.",
+      "Actual file includes audio and packaging overhead."
+    ],
+    "relevant_source_ids": [
+      "studio-export"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q14",
+    "question": "Can compression after recording fix a clipped microphone input?",
+    "category": "multi-guide",
+    "expected_facts": [
+      "It cannot reconstruct missing clipped information.",
+      "Correct input headroom during capture."
+    ],
+    "relevant_source_ids": [
+      "studio-gain-staging",
+      "studio-dynamics"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q15",
+    "question": "A singer hears an echo while recording. Should I fix it with EQ?",
+    "category": "multi-guide",
+    "expected_facts": [
+      "Check simultaneous direct and delayed software monitoring.",
+      "Changing frequency balance does not align two monitoring paths."
+    ],
+    "relevant_source_ids": [
+      "studio-monitoring",
+      "studio-equalization"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q16",
+    "question": "My exported interview starts in sync but ends out of sync. What should I check?",
+    "category": "multi-guide",
+    "expected_facts": [
+      "Compare beginning and end and source duration/rate interpretations.",
+      "Verify the exported file rather than only the settings dialog."
+    ],
+    "relevant_source_ids": [
+      "studio-synchronization",
+      "studio-export"
+    ],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": true,
+    "evaluation_scope": "rag_only"
+  },
+  {
+    "id": "studio-q17",
+    "question": "Using Logic Pro 12.3 documentation, explain how to choose automation modes and identify any documented commands or shortcuts that apply.",
+    "category": "unsupported",
+    "expected_facts": [
+      "Exact version-specific menu paths and shortcuts are not in these guides."
+    ],
+    "relevant_source_ids": [],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": false,
+    "evaluation_scope": "rag_only",
+    "answerability_scope_note": "Unsupported by the original Studio Knowledge guides; not a full-agent refusal rule. Official research or clarification may support a different answer."
+  },
+  {
+    "id": "studio-q18",
+    "question": "What is the exact phantom-power current consumption of an AT2035?",
+    "category": "unsupported",
+    "expected_facts": [
+      "The Studio guides intentionally omit hardware specification tables."
+    ],
+    "relevant_source_ids": [],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": false,
+    "evaluation_scope": "rag_only",
+    "answerability_scope_note": "Unsupported by the original Studio Knowledge guides; not a full-agent refusal rule. Official research or clarification may support a different answer."
+  },
+  {
+    "id": "studio-q19",
+    "question": "What exact HDR mastering values make my movie compliant with every broadcaster?",
+    "category": "unsupported",
+    "expected_facts": [
+      "No universal delivery specification or HDR mastering table is supplied."
+    ],
+    "relevant_source_ids": [],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": false,
+    "evaluation_scope": "rag_only",
+    "answerability_scope_note": "Unsupported by the original Studio Knowledge guides; not a full-agent refusal rule. Official research or clarification may support a different answer."
+  },
+  {
+    "id": "studio-q20",
+    "question": "What is the latest stock price of Apple today?",
+    "category": "unsupported",
+    "expected_facts": [
+      "No current market data is present."
+    ],
+    "relevant_source_ids": [],
+    "expectation_origin": "Authored before live model answers; source-level judgments, not model-generated response matching.",
+    "rag_answerable": false,
+    "evaluation_scope": "rag_only",
+    "answerability_scope_note": "Unsupported by the original Studio Knowledge guides; not a full-agent refusal rule. Official research or clarification may support a different answer."
+  }
+]

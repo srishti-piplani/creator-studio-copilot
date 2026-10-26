@@ -1,0 +1,87 @@
+# Local environment files (keep the example template)
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+wheels/
+
+# Frontend dependencies and build artifacts
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+
+# Third-party corpus content: retain only directories and placeholders
+/data/corpus/
+!/data/corpus/
+/data/corpus/**
+!/data/corpus/**/
+!/data/corpus/**/.gitkeep
+
+# Derived third-party document text and chunk datasets
+/data/processed/
+
+# Reproducible original Studio guide chunk outputs
+/data/studio_processed/
+
+# Isolated frontend verification build
+.next-qa/
+
+# Local logs, diagnostics, temporary files and private backup material
+*.log
+*.log.*
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+/backups/
+/local_archive/
+/private/
+*.pem
+*.key
+*.p12
+*.pfx
+# Downloaded manuals must not be accidentally added outside the corpus folder
+*.pdf
+
+# Public evaluation artifacts are an explicit allowlist; raw tool/model traces stay local
+/evaluations/*
+!/evaluations/README.md
+!/evaluations/historical_results.md
+!/evaluations/studio_retrieval.json
+!/evaluations/studio_preparation.json
+!/evaluations/agent_scenarios.json
+!/evaluations/agent_golden_regressions.json
+!/evaluations/phase5a_report.md
+!/evaluations/verified_source_inventory.json
+!/evaluations/cleanup_archive_inventory.json
+!/evaluations/public_readiness_checks.json
+!/evaluations/phase5a_baseline/
+/evaluations/phase5a_baseline/*
+!/evaluations/phase5a_baseline/golden_questions.json
+!/evaluations/phase5a_baseline/studio_retrieval.json
+
+# Next.js generates this local build type declaration
+/frontend/next-env.d.ts

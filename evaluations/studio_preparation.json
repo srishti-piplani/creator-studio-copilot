@@ -1,0 +1,13 @@
+{
+  "guides": 12,
+  "words": 4640,
+  "chunk_counts": {
+    "A": 36,
+    "B": 24,
+    "C": 12
+  },
+  "originality_limit": "Original AI-assisted guides with recorded references; no manual comparison or comprehensive plagiarism audit is performed during preparation.",
+  "technical_review": "Reference claims/excerpts checked by the authoring assistant, not independently human-reviewed.",
+  "manual_records_uploaded": 0,
+  "same_retained_text": true
+}

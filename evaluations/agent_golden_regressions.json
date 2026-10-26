@@ -1,0 +1,110 @@
+{
+  "evaluation_scope": "full_agent",
+  "network_calls": 0,
+  "evaluation_type": "linked scripted-provider policy regressions",
+  "limitations": [
+    "Not a live execution of these golden questions or an LLM quality score.",
+    "Passing linked tests does not verify current source accessibility, retrieval relevance, factual completeness or every rubric criterion.",
+    "New agent golden questions have not been live-scored in this phase."
+  ],
+  "scenarios_with_passing_linked_checks": 12,
+  "total_scenarios": 12,
+  "results": [
+    {
+      "id": "agent-q01",
+      "category": "conceptual",
+      "linked_checks_passed": true,
+      "checks_run": 2,
+      "errors": [],
+      "failures": []
+    },
+    {
+      "id": "agent-q02",
+      "category": "conceptual",
+      "linked_checks_passed": true,
+      "checks_run": 1,
+      "errors": [],
+      "failures": []
+    },
+    {
+      "id": "agent-q03",
+      "category": "product_how_to",
+      "linked_checks_passed": true,
+      "checks_run": 2,
+      "errors": [],
+      "failures": []
+    },
+    {
+      "id": "agent-q04",
+      "category": "product_how_to",
+      "linked_checks_passed": true,
+      "checks_run": 2,
+      "errors": [],
+      "failures": []
+    },
+    {
+      "id": "agent-q05",
+      "category": "creative_advice",
+      "linked_checks_passed": true,
+      "checks_run": 1,
+      "errors": [],
+      "failures": []
+    },
+    {
+      "id": "agent-q06",
+      "category": "creative_advice",
+      "linked_checks_passed": true,
+      "checks_run": 1,
+      "errors": [],
+      "failures": []
+    },
+    {
+      "id": "agent-q07",
+      "category": "troubleshooting",
+      "linked_checks_passed": true,
+      "checks_run": 1,
+      "errors": [],
+      "failures": []
+    },
+    {
+      "id": "agent-q08",
+      "category": "troubleshooting",
+      "linked_checks_passed": true,
+      "checks_run": 2,
+      "errors": [],
+      "failures": []
+    },
+    {
+      "id": "agent-q09",
+      "category": "discovery",
+      "linked_checks_passed": true,
+      "checks_run": 2,
+      "errors": [],
+      "failures": []
+    },
+    {
+      "id": "agent-q10",
+      "category": "licensing",
+      "linked_checks_passed": true,
+      "checks_run": 2,
+      "errors": [],
+      "failures": []
+    },
+    {
+      "id": "agent-q11",
+      "category": "official_research",
+      "linked_checks_passed": true,
+      "checks_run": 2,
+      "errors": [],
+      "failures": []
+    },
+    {
+      "id": "agent-q12",
+      "category": "insufficient_evidence",
+      "linked_checks_passed": true,
+      "checks_run": 2,
+      "errors": [],
+      "failures": []
+    }
+  ]
+}

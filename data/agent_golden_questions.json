@@ -1,0 +1,482 @@
+[
+  {
+    "id": "agent-q01",
+    "evaluation_scope": "full_agent",
+    "category": "conceptual",
+    "user_turns": [
+      "What is phantom power, and does every microphone need it?"
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "learn",
+    "answerability": {
+      "status": "known_answerable_verified",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Prefer Pinecone; no web search needed when guide evidence suffices."
+    ],
+    "relevant_source_ids": [
+      "studio-microphones"
+    ],
+    "verified_source_references": [],
+    "evidence_requirements": [
+      "Use the microphone guide; distinguish general education from manufacturer instructions."
+    ],
+    "answer_quality_criteria": [
+      "Explain compatible microphone power needs; do not claim all microphones need phantom."
+    ],
+    "clarification": "Not needed for this general question.",
+    "regression_tests": [
+      "test_agent.AgentScenarios.test_learn_citations",
+      "test_phase4k.Phase4K.test_conceptual_learn_stays_pinecone_first"
+    ]
+  },
+  {
+    "id": "agent-q02",
+    "evaluation_scope": "full_agent",
+    "category": "conceptual",
+    "user_turns": [
+      "What is the difference between a compressor and a limiter?"
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "learn",
+    "answerability": {
+      "status": "known_answerable_verified",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Prefer Pinecone; avoid unnecessary web research."
+    ],
+    "relevant_source_ids": [
+      "studio-dynamics"
+    ],
+    "verified_source_references": [],
+    "evidence_requirements": [
+      "Ground the distinction in the dynamics guide."
+    ],
+    "answer_quality_criteria": [
+      "Explain level control versus peak limiting in beginner language.",
+      "Do not promise every limiter detects true peaks or prevents all overload."
+    ],
+    "clarification": "Not needed for a conceptual comparison.",
+    "regression_tests": [
+      "test_phase4k.Phase4K.test_conceptual_learn_stays_pinecone_first"
+    ]
+  },
+  {
+    "id": "agent-q03",
+    "evaluation_scope": "full_agent",
+    "category": "product_how_to",
+    "user_turns": [
+      "How do I add a compressor to an audio track in Logic Pro?"
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "learn",
+    "answerability": {
+      "status": "known_answerable_verified",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Prioritize official Apple documentation through Keenable; general RAG is not required."
+    ],
+    "relevant_source_ids": [],
+    "verified_source_references": [
+      {
+        "url": "https://support.apple.com/guide/logicpro/add-remove-move-and-copy-plug-ins-lgcpf3940a82/12.3/mac/15.6",
+        "artifact": "evaluations/verified_source_inventory.json",
+        "basis": "Saved official evidence for plug-in insertion; not a fresh availability check."
+      }
+    ],
+    "evidence_requirements": [
+      "Applicable Apple instructions must support the retained procedure.",
+      "Reference version is not proof of installed version."
+    ],
+    "answer_quality_criteria": [
+      "Give a nonempty concise insertion procedure, not a takeaway-only answer.",
+      "Omit unsupported locations, optional tuning and success checks."
+    ],
+    "clarification": "Ask only if essential version ambiguity remains.",
+    "regression_tests": [
+      "test_phase4k.Phase4K.test_supported_procedure_and_official_first",
+      "test_phase4k.Phase4K.test_unsupported_individual_optional_step_omitted"
+    ]
+  },
+  {
+    "id": "agent-q04",
+    "evaluation_scope": "full_agent",
+    "category": "product_how_to",
+    "user_turns": [
+      "Using Logic Pro 12.3 documentation, explain how to choose automation modes and identify any documented commands or shortcuts that apply."
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "learn",
+    "answerability": {
+      "status": "evidence_search_required",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Search applicable official Logic Pro documentation through Keenable."
+    ],
+    "relevant_source_ids": [],
+    "verified_source_references": [],
+    "evidence_requirements": [
+      "Verify automation mode selection and only commands/shortcuts actually documented."
+    ],
+    "answer_quality_criteria": [
+      "Do not assume each automation mode has its own command or shortcut.",
+      "Give supported portions; disclose remaining gaps."
+    ],
+    "clarification": "Appropriate if installed version materially changes instructions.",
+    "regression_tests": [
+      "test_agent.AgentScenarios.test_web_fallback_for_software",
+      "test_phase4k.Phase4K.test_version_mismatch_blocks_exact_ui"
+    ]
+  },
+  {
+    "id": "agent-q05",
+    "evaluation_scope": "full_agent",
+    "category": "creative_advice",
+    "user_turns": [
+      "How do I make vocals sound warmer?"
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "learn",
+    "answerability": {
+      "status": "known_answerable_verified",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Start with relevant Studio Knowledge; external search only for unsupported desired recommendations."
+    ],
+    "relevant_source_ids": [
+      "studio-equalization",
+      "studio-dynamics"
+    ],
+    "verified_source_references": [],
+    "evidence_requirements": [
+      "Support each retained suggestion with actual passages; subjective listening experiments must be labeled as such."
+    ],
+    "answer_quality_criteria": [
+      "Offer practical qualitative suggestions.",
+      "Do not invent EQ frequencies, exact settings or a mandatory UI procedure."
+    ],
+    "clarification": "Optional for refinement; do not block supported general advice.",
+    "regression_tests": [
+      "test_phase4m.Phase4M.test_creative_goal_is_not_forced_into_ui_procedure"
+    ]
+  },
+  {
+    "id": "agent-q06",
+    "evaluation_scope": "full_agent",
+    "category": "creative_advice",
+    "user_turns": [
+      "My vocal still sounds thin after the basic EQ advice. What other recording approaches could I try?"
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "learn",
+    "answerability": {
+      "status": "evidence_search_required",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Retrieve relevant concepts; use Keenable when internal evidence is insufficient."
+    ],
+    "relevant_source_ids": [
+      "studio-microphones",
+      "studio-equalization"
+    ],
+    "verified_source_references": [],
+    "evidence_requirements": [
+      "Evaluate evidence actually returned; source IDs are retrieval candidates, not promises that every proposed technique is covered."
+    ],
+    "answer_quality_criteria": [
+      "Provide supported partial advice; avoid invented positioning measurements or settings."
+    ],
+    "clarification": "A simple question about recording conditions is appropriate.",
+    "regression_tests": [
+      "test_phase4m.Phase4M.test_creative_advice_uses_external_fallback_when_internal_insufficient"
+    ]
+  },
+  {
+    "id": "agent-q07",
+    "evaluation_scope": "full_agent",
+    "category": "troubleshooting",
+    "user_turns": [
+      "Why do I hear my voice twice while recording?",
+      "Only during recording.",
+      "I don't know."
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "troubleshoot",
+    "answerability": {
+      "status": "known_answerable_verified",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Retrieve monitoring concepts and applicable official hardware evidence as needed.",
+      "Retain symptom and answers across all turns."
+    ],
+    "relevant_source_ids": [
+      "studio-monitoring"
+    ],
+    "verified_source_references": [
+      {
+        "url": "https://support.focusrite.com/hc/en-gb/articles/206849879-Input-Signal-audible-when-not-recording-or-software-closed",
+        "artifact": "evaluations/verified_source_inventory.json",
+        "basis": "Saved applicable Focusrite Direct Monitor evidence."
+      }
+    ],
+    "evidence_requirements": [
+      "Official Focusrite evidence must apply to first/second-generation Solo/2i2, not newer controls."
+    ],
+    "answer_quality_criteria": [
+      "Two paths are a possible cause, not a confirmed diagnosis.",
+      "Ask one observable hardware question; accept uncertainty and simplify.",
+      "Do not ask the user to diagnose abstract monitoring paths."
+    ],
+    "clarification": "One simple diagnostic question at a time is appropriate.",
+    "regression_tests": [
+      "test_phase4m.Phase4M.test_hardware_check_then_unknown_reply_preserves_symptom"
+    ]
+  },
+  {
+    "id": "agent-q08",
+    "evaluation_scope": "full_agent",
+    "category": "troubleshooting",
+    "user_turns": [
+      "Why do I hear my voice twice while recording?",
+      "Only during recording.",
+      "That did not work."
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "troubleshoot",
+    "answerability": {
+      "status": "known_answerable_verified",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Retain original symptom, attempted actions and failed outcomes.",
+      "Obtain official evidence before exact software control instructions."
+    ],
+    "relevant_source_ids": [
+      "studio-monitoring"
+    ],
+    "verified_source_references": [],
+    "evidence_requirements": [
+      "Only mark an action failed if a previous assistant turn actually proposed it."
+    ],
+    "answer_quality_criteria": [
+      "Do not repeat a failed fix or answered question.",
+      "Offer a supported next action or the question needed to choose one."
+    ],
+    "clarification": "Appropriate for missing observable details.",
+    "regression_tests": [
+      "test_phase4k.Phase4K.test_monitoring_context_supported_action_and_failed_fix",
+      "test_agent.AgentScenarios.test_failed_fix_is_not_repeated"
+    ]
+  },
+  {
+    "id": "agent-q09",
+    "evaluation_scope": "full_agent",
+    "category": "discovery",
+    "user_turns": [
+      "Find beginner Logic Pro vocal-mixing tutorials I can watch."
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "discover",
+    "answerability": {
+      "status": "evidence_search_required",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Use Keenable for real relevant resources."
+    ],
+    "relevant_source_ids": [],
+    "verified_source_references": [],
+    "evidence_requirements": [
+      "Use actual returned titles and links; community tutorials must not be labeled official."
+    ],
+    "answer_quality_criteria": [
+      "Return useful resource cards.",
+      "Viewing-only tutorials do not need prominent reuse-license warnings."
+    ],
+    "clarification": "Not required unless preferences are necessary.",
+    "regression_tests": [
+      "test_agent.AgentScenarios.test_discover_resource_cards",
+      "test_targeted_intelligence.TargetedIntelligenceTests.test_tutorial_viewing_and_sample_reuse_have_different_labels"
+    ]
+  },
+  {
+    "id": "agent-q10",
+    "evaluation_scope": "full_agent",
+    "category": "licensing",
+    "user_turns": [
+      "Find royalty-free tabla loops I can use in a YouTube cover."
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "discover",
+    "answerability": {
+      "status": "evidence_search_required",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Use Keenable; check reuse terms where accessible with bounded requests."
+    ],
+    "relevant_source_ids": [],
+    "verified_source_references": [],
+    "evidence_requirements": [
+      "Free download is not proof of reuse rights.",
+      "Only verified applicable terms support licensing claims; failed checks remain unverified."
+    ],
+    "answer_quality_criteria": [
+      "Provide useful real options while distinguishing verified and unverified rights.",
+      "Do not grant clearance for the underlying cover composition."
+    ],
+    "clarification": "May ask intended usage if necessary for license applicability.",
+    "regression_tests": [
+      "test_agent.Phase4BQualityTests.test_discovery_does_not_render_unverified_model_license_claims",
+      "test_phase4m.Phase4M.test_resource_fetch_reports_categories_without_retries"
+    ]
+  },
+  {
+    "id": "agent-q11",
+    "evaluation_scope": "full_agent",
+    "category": "official_research",
+    "user_turns": [
+      "What is the exact phantom-power current consumption of an AT2035?"
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "learn",
+    "answerability": {
+      "status": "evidence_search_required",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Search official Audio-Technica specifications; generic Studio Knowledge cannot establish this value."
+    ],
+    "relevant_source_ids": [],
+    "verified_source_references": [],
+    "evidence_requirements": [
+      "Only an applicable explicit manufacturer specification can support a numeric value."
+    ],
+    "answer_quality_criteria": [
+      "Do not confuse supply voltage with current consumption.",
+      "Report an evidence gap if no value is verified, without declaring the complete assistant universally unable to research it."
+    ],
+    "clarification": "Model clarification is unnecessary: AT2035 is explicit.",
+    "regression_tests": [
+      "test_agent.AgentScenarios.test_missing_evidence",
+      "test_phase4k.Phase4K.test_concepts_and_spoofed_official_sources_cannot_establish_ui"
+    ]
+  },
+  {
+    "id": "agent-q12",
+    "evaluation_scope": "full_agent",
+    "category": "insufficient_evidence",
+    "user_turns": [
+      "Give me one exact Scarlett gain-knob position guaranteed never to clip any singer with my AT2035, without measuring the input."
+    ],
+    "studio_setup": {
+      "software": [
+        "Logic Pro (documentation reference 12.3; installed version unknown)"
+      ],
+      "interface": "Scarlett 2i2, 2nd Gen",
+      "microphone": "AT2035"
+    },
+    "expected_intent": "learn",
+    "answerability": {
+      "status": "insufficient_evidence_after_research",
+      "scope": "Requested claims, judged against evidence actually obtained; search candidates are not globally unanswerable."
+    },
+    "expected_tool_behavior": [
+      "Retrieve gain-staging concepts; research if needed, but never manufacture a universal guarantee."
+    ],
+    "relevant_source_ids": [
+      "studio-gain-staging"
+    ],
+    "verified_source_references": [],
+    "evidence_requirements": [
+      "Guide distinguishes capture gain, input overload and listening level.",
+      "Unsupported guarantee applies to the requested exact position, not all useful help."
+    ],
+    "answer_quality_criteria": [
+      "Decline the universal exact setting while offering supported headroom/checking advice.",
+      "Ask about observed input level if needed; do not invent knob calibration."
+    ],
+    "clarification": "Appropriate to request measurable input behavior.",
+    "regression_tests": [
+      "test_agent.AgentScenarios.test_missing_evidence",
+      "test_agent.AgentScenarios.test_conflicting_sources_stop"
+    ],
+    "evaluation_conditions": [
+      "Controlled insufficient-evidence case: research yields no applicable evidence for the requested universal setting. Assess this condition against the actual research record; do not use this label to force a runtime refusal.",
+      "Supported partial gain-staging advice remains appropriate."
+    ]
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "text": "SYNTHETIC TEST ONLY: In this fictional lesson, create an audio track, select the microphone input, arm the track and start recording.",
+    "metadata": {
+      "document_id": "synthetic-document-v1",
+      "source_id": "synthetic-document-v1",
+      "product": "Logic Pro",
+      "document_title": "Synthetic Pinecone integration fixture — not official documentation",
+      "source_url": "https://example.invalid/synthetic-pinecone-fixture",
+      "section_title": "Audio recording",
+      "section_id": "synthetic-section-1",
+      "chunk_id": "58554553f1f6a938d9c0c2cc8fb94dd2ca87d30690f0c9e7981dd8600ebd7ae9",
+      "configuration": "A",
+      "chunking_strategy": "fixed",
+      "version": "synthetic-only",
+      "page_start": 1,
+      "page_end": 1,
+      "pages": [
+        1
+      ],
+      "synthetic": true
+    }
+  },
+  {
+    "text": "SYNTHETIC TEST ONLY: The imaginary test interface routes a microphone directly to headphones with Direct Monitor. This avoids delayed computer monitoring and lets the performer hear the input immediately.",
+    "metadata": {
+      "document_id": "synthetic-document-v1",
+      "source_id": "synthetic-document-v1",
+      "product": "Focusrite Scarlett Solo",
+      "document_title": "Synthetic Pinecone integration fixture — not official documentation",
+      "source_url": "https://example.invalid/synthetic-pinecone-fixture",
+      "section_title": "Direct monitoring",
+      "section_id": "synthetic-section-2",
+      "chunk_id": "903aa864b5778e8ad4eb9c741e40d1161ca25d515fad302a8490b07dc0544cce",
+      "configuration": "A",
+      "chunking_strategy": "fixed",
+      "version": "synthetic-only",
+      "page_start": 2,
+      "page_end": 2,
+      "pages": [
+        2
+      ],
+      "synthetic": true
+    }
+  },
+  {
+    "text": "SYNTHETIC TEST ONLY: In this fictional lesson, a MIDI keyboard sends note messages rather than recorded sound. Choose a software instrument track to turn those notes into audio.",
+    "metadata": {
+      "document_id": "synthetic-document-v1",
+      "source_id": "synthetic-document-v1",
+      "product": "Logic Pro",
+      "document_title": "Synthetic Pinecone integration fixture — not official documentation",
+      "source_url": "https://example.invalid/synthetic-pinecone-fixture",
+      "section_title": "MIDI keyboard",
+      "section_id": "synthetic-section-3",
+      "chunk_id": "111c1f480dedec044c8c62467516d0ada2e33a6a563c68e9a84b9ff9c3f3b14f",
+      "configuration": "A",
+      "chunking_strategy": "fixed",
+      "version": "synthetic-only",
+      "page_start": 3,
+      "page_end": 3,
+      "pages": [
+        3
+      ],
+      "synthetic": true
+    }
+  },
+  {
+    "text": "SYNTHETIC TEST ONLY: For this fictional movie, choose an output format and destination, add the finished timeline to the Render Queue, then start rendering to save the video file.",
+    "metadata": {
+      "document_id": "synthetic-document-v1",
+      "source_id": "synthetic-document-v1",
+      "product": "DaVinci Resolve",
+      "document_title": "Synthetic Pinecone integration fixture — not official documentation",
+      "source_url": "https://example.invalid/synthetic-pinecone-fixture",
+      "section_title": "Video export",
+      "section_id": "synthetic-section-4",
+      "chunk_id": "1236ce48517f90ae6706eea02b3163cfe804ea9d3dae9e3d16bebab576dd95ba",
+      "configuration": "A",
+      "chunking_strategy": "fixed",
+      "version": "synthetic-only",
+      "page_start": 4,
+      "page_end": 4,
+      "pages": [
+        4
+      ],
+      "synthetic": true
+    }
+  },
+  {
+    "text": "SYNTHETIC TEST ONLY: This fictional color lesson adjusts shadows with Lift, midtones with Gamma and highlights with Gain to balance the image.",
+    "metadata": {
+      "document_id": "synthetic-document-v1",
+      "source_id": "synthetic-document-v1",
+      "product": "DaVinci Resolve",
+      "document_title": "Synthetic Pinecone integration fixture — not official documentation",
+      "source_url": "https://example.invalid/synthetic-pinecone-fixture",
+      "section_title": "Color correction",
+      "section_id": "synthetic-section-5",
+      "chunk_id": "cea1b814adea67c51244e0aaeef7e45197879e97ec66f07ff268823f75f56383",
+      "configuration": "A",
+      "chunking_strategy": "fixed",
+      "version": "synthetic-only",
+      "page_start": 5,
+      "page_end": 5,
+      "pages": [
+        5
+      ],
+      "synthetic": true
+    }
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "path": "microphones.md",
+    "product": "Studio fundamentals",
+    "topic": "Microphone types and phantom power",
+    "document_title": "Microphone types and phantom power",
+    "source_url": "studio://studio-microphones"
+  },
+  {
+    "path": "gain-staging.md",
+    "product": "Studio fundamentals",
+    "topic": "Audio interfaces, gain staging and clipping",
+    "document_title": "Audio interfaces, gain staging and clipping",
+    "source_url": "studio://studio-gain-staging"
+  },
+  {
+    "path": "monitoring.md",
+    "product": "Studio fundamentals",
+    "topic": "Direct versus software monitoring and latency",
+    "document_title": "Direct versus software monitoring and latency",
+    "source_url": "studio://studio-monitoring"
+  },
+  {
+    "path": "equalization.md",
+    "product": "Studio fundamentals",
+    "topic": "EQ, filters, frequency and Q",
+    "document_title": "EQ, filters, frequency and Q",
+    "source_url": "studio://studio-equalization"
+  },
+  {
+    "path": "dynamics.md",
+    "product": "Studio fundamentals",
+    "topic": "Compression, limiting and de-essing",
+    "document_title": "Compression, limiting and de-essing",
+    "source_url": "studio://studio-dynamics"
+  },
+  {
+    "path": "space-effects.md",
+    "product": "Studio fundamentals",
+    "topic": "Reverb, delay and effects sends",
+    "document_title": "Reverb, delay and effects sends",
+    "source_url": "studio://studio-space-effects"
+  },
+  {
+    "path": "midi.md",
+    "product": "Studio fundamentals",
+    "topic": "MIDI, quantization and velocity",
+    "document_title": "MIDI, quantization and velocity",
+    "source_url": "studio://studio-midi"
+  },
+  {
+    "path": "recording-editing.md",
+    "product": "Studio fundamentals",
+    "topic": "Recording, editing, comping and crossfades",
+    "document_title": "Recording, editing, comping and crossfades",
+    "source_url": "studio://studio-recording-editing"
+  },
+  {
+    "path": "video-basics.md",
+    "product": "Studio fundamentals",
+    "topic": "Frame rate, resolution and codecs",
+    "document_title": "Frame rate, resolution and codecs",
+    "source_url": "studio://studio-video-basics"
+  },
+  {
+    "path": "synchronization.md",
+    "product": "Studio fundamentals",
+    "topic": "Audio/video synchronization and drift",
+    "document_title": "Audio/video synchronization and drift",
+    "source_url": "studio://studio-synchronization"
+  },
+  {
+    "path": "color.md",
+    "product": "Studio fundamentals",
+    "topic": "Color correction, grading and scopes",
+    "document_title": "Color correction, grading and scopes",
+    "source_url": "studio://studio-color"
+  },
+  {
+    "path": "export.md",
+    "product": "Studio fundamentals",
+    "topic": "Export formats, quality and delivery checks",
+    "document_title": "Export formats, quality and delivery checks",
+    "source_url": "studio://studio-export"
+  }
+]

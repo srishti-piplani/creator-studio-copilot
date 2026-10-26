@@ -1,0 +1,78 @@
+{
+  "evaluation_type": "deterministic scripted-provider graph scenarios",
+  "network_calls": 0,
+  "passed": 10,
+  "total": 10,
+  "results": [
+    {
+      "id": "learn_citations",
+      "scenario": "Learn a general concept with checked citation IDs",
+      "passed": true,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "id": "diagnostic_progression",
+      "scenario": "Ask one question, retain the answer, suggest a next step",
+      "passed": true,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "id": "failed_fix_is_not_repeated",
+      "scenario": "That did not work retains intent, marks failure, blocks repetition",
+      "passed": true,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "id": "web_fallback_for_software",
+      "scenario": "Software instructions search official documentation",
+      "passed": true,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "id": "conflicting_sources_stop",
+      "scenario": "Contradictory evidence stops supported-step generation",
+      "passed": true,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "id": "discover_resource_cards",
+      "scenario": "Discovery returns URLs and unverified-license labels",
+      "passed": true,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "id": "timeout_bounded",
+      "scenario": "Unavailable web tool terminates without an infinite retry loop",
+      "passed": true,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "id": "resolved_and_session_isolation",
+      "scenario": "Reported success closes diagnosis; other sessions stay separate",
+      "passed": true,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "id": "missing_evidence",
+      "scenario": "Insufficient evidence produces an explicit limitation",
+      "passed": true,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "id": "repeated_question",
+      "scenario": "Previously asked diagnostic question is not repeated",
+      "passed": true,
+      "failures": 0,
+      "errors": 0
+    }
+  ]
+}

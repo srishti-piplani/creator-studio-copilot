@@ -1,0 +1,11 @@
+{
+  "scope": "Git-eligible public files, including untracked files; no files staged",
+  "candidate_files": 155,
+  "findings": [],
+  "guide_hashes_valid": true,
+  "guide_count": 12,
+  "limitations": [
+    "No paid APIs or cloud index inventory checked.",
+    "Pattern/exact-value checks cannot rule out unknown historical secrets or establish content redistribution rights."
+  ]
+}

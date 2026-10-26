@@ -1,0 +1,373 @@
+{
+  "corpus": "studio-original",
+  "guides": [
+    {
+      "source_id": "studio-microphones",
+      "path": "microphones.md",
+      "title": "Microphone types and phantom power",
+      "reference_ids": [
+        "phantom",
+        "balanced"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "2e31e04fc7a3b0a2ee85ccff424dbc8eb044e76c30c2432432e92c2e14b883fe"
+    },
+    {
+      "source_id": "studio-gain-staging",
+      "path": "gain-staging.md",
+      "title": "Audio interfaces, gain staging and clipping",
+      "reference_ids": [
+        "gain",
+        "vocals"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "ba044b397e630aff94617ebb57e03b265b88e99969d79457227a221740411c83"
+    },
+    {
+      "source_id": "studio-monitoring",
+      "path": "monitoring.md",
+      "title": "Direct versus software monitoring and latency",
+      "reference_ids": [
+        "direct",
+        "echo"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "76c6bf6d2f20121fa40e26f07a4762f15893797daed744a4e9ddb9de30269d29"
+    },
+    {
+      "source_id": "studio-equalization",
+      "path": "equalization.md",
+      "title": "EQ, filters, frequency and Q",
+      "reference_ids": [
+        "eq",
+        "q"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "80287a6441f19fd17ab3cc20e491da221fb80e00013ec278502f0abdd209c68f"
+    },
+    {
+      "source_id": "studio-dynamics",
+      "path": "dynamics.md",
+      "title": "Compression, limiting and de-essing",
+      "reference_ids": [
+        "compress",
+        "dynamics",
+        "deess"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "cf3e46055fa14a688732f382f984ab4dfbcda5441da67c899295a712bfffc861"
+    },
+    {
+      "source_id": "studio-space-effects",
+      "path": "space-effects.md",
+      "title": "Reverb, delay and effects sends",
+      "reference_ids": [
+        "reverb",
+        "aux"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "c34d82cdf852cf0f296e6d48c0ebcdc9519c0cdc0a49387154c4bbbbd7815b06"
+    },
+    {
+      "source_id": "studio-midi",
+      "path": "midi.md",
+      "title": "MIDI, quantization and velocity",
+      "reference_ids": [
+        "midi"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "dbb4543425651b8b9539bc11d6eee6aae47aa8157cb53593085ff4194596402d"
+    },
+    {
+      "source_id": "studio-recording-editing",
+      "path": "recording-editing.md",
+      "title": "Recording, editing, comping and crossfades",
+      "reference_ids": [
+        "vocals",
+        "comp",
+        "fades"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "f4414afd1d957540e4151e66d7d0d5ad19f22ea0dc9845fd1711974d83a4a608"
+    },
+    {
+      "source_id": "studio-video-basics",
+      "path": "video-basics.md",
+      "title": "Frame rate, resolution and codecs",
+      "reference_ids": [
+        "resolution",
+        "codec"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "c701707215503410936e7188ea884e8faa9d41da594c814a9a58fc21d54a29a6"
+    },
+    {
+      "source_id": "studio-synchronization",
+      "path": "synchronization.md",
+      "title": "Audio/video synchronization and drift",
+      "reference_ids": [
+        "sync",
+        "clock",
+        "timecode"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "c24f6aeaefef87dae287126dac40d8abfd42e446ccea244619f8c9d1217b9e80"
+    },
+    {
+      "source_id": "studio-color",
+      "path": "color.md",
+      "title": "Color correction, grading and scopes",
+      "reference_ids": [
+        "scopes"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "943183ff0ad1437e982a59c11c766f7c33bc933d29dc56bf440350e58b6f633d"
+    },
+    {
+      "source_id": "studio-export",
+      "path": "export.md",
+      "title": "Export formats, quality and delivery checks",
+      "reference_ids": [
+        "export",
+        "vimeo",
+        "codec"
+      ],
+      "authorship": "Original AI-assisted educational writing; examples authored for this project.",
+      "review_status": "reference-supported",
+      "independently_human_verified": false,
+      "scope": "General fundamentals; not official product documentation or exact version-specific instructions.",
+      "sha256": "db69b9d21f684b810c3e1771ad2fb479863744a0c40a8ee610b29f3520792b3e"
+    }
+  ],
+  "references": [
+    {
+      "id": "phantom",
+      "title": "Shure: What is Phantom Power & Why Do I Need It?",
+      "url": "https://www.shure.com/en-GB/Insights/w/what-is-phantom-power-why-do-i-need-it",
+      "checked_on": "2026-10-24",
+      "verification_scope": "DC power, condenser electronics, dynamic/ribbon caveats and connection precautions",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "balanced",
+      "title": "Sound Devices: Phantom Powering Basics",
+      "url": "https://www.sounddevices.com/phantom-powering-basics/",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Balanced XLR phantom supply and microphone power requirements",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "gain",
+      "title": "Focusrite: How high should I set the gain control?",
+      "url": "https://support.focusrite.com/hc/en-gb/articles/208958089-How-high-should-I-set-the-gain-control-on-my-interface",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Input gain, clipping and digital headroom",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "vocals",
+      "title": "Focusrite: How to Record Vocals",
+      "url": "https://focusrite.com/articles/how-to-record-vocals/",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Recording preparation, headphone monitoring and input gain; official indexed excerpt reviewed",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "direct",
+      "title": "Focusrite: What is direct monitoring?",
+      "url": "https://support.focusrite.com/hc/en-gb/articles/207546305-What-is-direct-monitoring",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Direct routing and near-zero-latency input monitoring",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "echo",
+      "title": "Focusrite: Echo when using Direct Monitoring",
+      "url": "https://support.focusrite.com/hc/en-gb/articles/207547105-I-m-hearing-an-echo-when-using-Direct-Monitoring",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Simultaneous hardware/software paths cause doubling",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "eq",
+      "title": "Yamaha: Equalization",
+      "url": "https://hub.yamaha.com/proaudio/livesound/eq/",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Parametric frequency, gain and bandwidth controls",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "q",
+      "title": "Yamaha: Practical EQ Techniques",
+      "url": "https://hub.yamaha.com/proaudio/recording/recording-basics-practical-eq-techniques/",
+      "checked_on": "2026-10-24",
+      "verification_scope": "High Q is narrow, low Q is broad; tonal problem solving",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "compress",
+      "title": "iZotope: Compression versus Limiting",
+      "url": "https://www.izotope.com/community/blog/compressor-vs-limiter",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Threshold/ratio examples and compressor/limiter purpose",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "dynamics",
+      "title": "iZotope: Ozone Dynamics",
+      "url": "https://downloads.izotope.com/docs/ozone8/dynamics/index.html",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Attack, release and ratio; official indexed documentation excerpt reviewed",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "deess",
+      "title": "iZotope: RX De-ess",
+      "url": "https://downloads.izotope.com/docs/rx6/24-de-ess/index.html",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Sibilance detection and frequency-selective attenuation",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "reverb",
+      "title": "Yamaha: Understanding and Using Reverb",
+      "url": "https://hub.yamaha.com/proaudio/recording/reverb/",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Auxiliary reverb, wet-only returns and space",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "aux",
+      "title": "Yamaha: Aux Sends and Returns",
+      "url": "https://hub.yamaha.com/proaudio/livesound/aux-sends-and-returns/",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Pre/post-fader sends and effect routing",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "midi",
+      "title": "Ableton: Editing MIDI",
+      "url": "https://www.ableton.com/en/manual/editing-midi/",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Notes, velocity, timing and quantization",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "comp",
+      "title": "Ableton: Comping",
+      "url": "https://www.ableton.com/en/manual/comping/",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Selecting performances into a composite take",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "fades",
+      "title": "Ableton: Arrangement View",
+      "url": "https://www.ableton.com/en/manual/arrangement-view/",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Fades and crossfades at clip boundaries",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "resolution",
+      "title": "Adobe: Video Resolution",
+      "url": "https://www.adobe.com/creativecloud/video/discover/video-resolution.html",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Pixels and progressive frames",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "codec",
+      "title": "MDN: Web Video Codec Guide",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Video_codecs",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Codecs, lossy compression and artifacts",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "clock",
+      "title": "Focusrite: Clock Source and Sample Rate",
+      "url": "https://support.focusrite.com/hc/en-gb/articles/115004172569-What-are-the-Clock-Source-and-Sample-Rate",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Digital clock synchronization",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "sync",
+      "title": "Adobe: Synchronize Clips in the Timeline",
+      "url": "https://helpx.adobe.com/premiere/desktop/add-audio-effects/basic-audio-editing/synchronize-clips-in-the-timeline-panel.html",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Alignment by common synchronization points",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "timecode",
+      "title": "Sound Devices: Scorpio Guide, Timecode glossary",
+      "url": "https://support.sounddevices.com/hc/en-us/articles/44822309000475-Scorpio-User-Guide",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Timecode labels and independent clocks after jam sync",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "scopes",
+      "title": "Adobe: Display Lumetri Scopes",
+      "url": "https://helpx.adobe.com/premiere/desktop/correct-color/add-color-effects/display-lumetri-scopes.html",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Waveform, histogram, parade and vectorscope as measurement tools",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "export",
+      "title": "Adobe: Export Settings Reference",
+      "url": "https://helpx.adobe.com/premiere/desktop/render-and-export/export-files/overview-of-export-settings.html",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Output settings and bitrate/file-size relationship",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    },
+    {
+      "id": "vimeo",
+      "title": "Vimeo: Recommended Premiere Export Settings",
+      "url": "https://help.vimeo.com/hc/en-us/articles/12426058823057-Recommended-Adobe-Premiere-Pro-export-settings-for-Vimeo-uploads",
+      "checked_on": "2026-10-24",
+      "verification_scope": "Delivery settings and watching completed exports; official indexed excerpt reviewed",
+      "method": "Official page/excerpt inspected; no source text copied into guides."
+    }
+  ],
+  "limitations": [
+    "Reference checking is not independent human review or a comprehensive plagiarism audit.",
+    "No manufacturer PDF text was used as authoring input. General concepts are not device-specific specifications."
+  ]
+}
